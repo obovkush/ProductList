@@ -7,7 +7,7 @@ const Button = ({
 	variant = 'default',
 	size = 'standart',
 	block = false,
-    outlined = false,
+	outlined = false,
 	href,
 	text,
 	onClick,
@@ -15,10 +15,10 @@ const Button = ({
 	className,
 	props,
 }) => {
-	const buttonClass = clsx(cl.button, className, {
+	const classes = clsx(cl.button, className, {
 		[cl[variant]]: true,
 		[cl[size]]: true,
-        [cl.outlined]: outlined,
+		[cl.outlined]: outlined,
 		[cl.block]: block,
 	});
 
@@ -33,7 +33,7 @@ const Button = ({
 	return (
 		<button
 			{...props}
-			className={buttonClass}
+			className={classes}
 			onClick={onClick}
 			disabled={disabled}
 		>

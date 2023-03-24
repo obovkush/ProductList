@@ -14,10 +14,10 @@ const ProductItem = ({ product }) => {
 					<div className={cl.header}>
 						<div className={cl.badges}>
 							{product.rate > 4 && (
-								<Badge variant={'primary'} text={'Top'} />
+								<Badge variant={'primary'} size={'small'} text={'Top'} />
 							)}
 							{product.new && (
-								<Badge variant={'success'} text={'New'} />
+								<Badge variant={'success'} size={'small'} text={'New'} />
 							)}
 						</div>
                         <div className={cl.category}>

@@ -5,7 +5,10 @@
 	font-weight: bold;
 	padding: 0.25rem 0.5rem;
 	border-radius: 2px;
-	max-height: 24px;
+}
+
+.default {
+	background-color: #ccc;
 }
 
 .primary {
@@ -22,4 +25,20 @@
 
 .danger {
 	background-color: #f5222d;
+}
+
+.standart {
+	padding: 0.5rem 1rem;
+}
+
+.large {
+	font-size: 1.25rem;
+	padding: 1rem 2rem;
+	max-height: 32px;
+}
+
+.small {
+	font-size: 0.75rem;
+	padding: 0.4rem 0.8rem;
+	max-height: 24px;
 }
