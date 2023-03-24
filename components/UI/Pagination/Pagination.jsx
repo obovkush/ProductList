@@ -27,7 +27,7 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
 					max={totalPages}
                     className={cl.pageInput}
 					value={currentPage}
-					onChange={(e) => (Number(e.target.value) <= totalPages) && onPageChange(Number(e.target.value))}
+					onChange={(e) => (Number(e.target.value) > 0 && Number(e.target.value) <= totalPages) && onPageChange(Number(e.target.value))}
 				/>
                 {' '} / {totalPages}
 			</div>
