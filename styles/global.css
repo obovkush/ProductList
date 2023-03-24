@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.pageContainer {
+    margin-top: 70px;
+    padding: 0 5px;
+    /* text-align: center; */
+}
+
+@media (min-width: 480px) {
+    .pageContainer {
+        padding: 0 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .pageContainer {
+        padding: 0 30px;
+    }
+}
