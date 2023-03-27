@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Badge from '../UI/Badge/Badge';
 import Button from '../UI/Button/Button';
 import Card from '../UI/Card/Card';
@@ -9,7 +10,6 @@ const ProductItem = ({ product }) => {
 			<div>
 				<div
 					className={cl.content}
-					style={{ backgroundImage: `url(${product.images[0]})` }}
 				>
 					<div className={cl.header}>
 						<div className={cl.badges}>
@@ -23,6 +23,15 @@ const ProductItem = ({ product }) => {
                         <div className={cl.category}>
 							<h4>{product.category?.name}</h4>
 						</div>
+                        <Image
+                            alt="Mountains"
+                            src={product.images[0]}
+                            fill
+                            sizes="100%"
+                            style={{
+                                objectFit: 'cover',
+                            }}
+                        />
 					</div>
 				</div>
 				<div className={cl.details}>
@@ -35,7 +44,7 @@ const ProductItem = ({ product }) => {
 				</div>
 			</div>
 			<div>
-				<Button variant='primary' text='В корзину' />
+				<Button variant='primary'>{"В корзину"}</Button>
 			</div>
 		</Card>
 	);
