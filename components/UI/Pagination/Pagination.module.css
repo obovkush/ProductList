@@ -1,14 +1,14 @@
 .pagination {
-    display: flex;
-    gap: 5px;
-    font-weight: bold;
-    margin-top: 20px;
-    justify-content: center;
+	display: flex;
+	gap: 5px;
+	font-weight: bold;
+	margin-top: 20px;
+	justify-content: center;
 }
 
 .pageInput {
-    max-width: 64px;
-    height: 32px;
-    font-weight: bold;
-    text-align: center;
+	max-width: 64px;
+	height: 32px;
+	font-weight: bold;
+	text-align: center;
 }

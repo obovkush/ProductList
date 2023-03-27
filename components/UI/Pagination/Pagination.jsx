@@ -18,11 +18,13 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
 				size="small"
 				disabled={currentPage === 1}
 				onClick={handlePrevClick}
-                text={"<"}
-			/>
+                className={cl.btn}
+			>
+                {"<"}
+            </Button>
 			<div>
 				<Input
-					type="number"
+					// type="number"
 					min="1"
 					max={totalPages}
                     className={cl.pageInput}
@@ -36,8 +38,9 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
 				size="small"
 				disabled={currentPage === totalPages}
 				onClick={handleNextClick}
-                text={">"}
-			/>
+			>
+                {">"}
+            </Button>
 		</div>
 	);
 };
