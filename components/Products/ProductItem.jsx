@@ -13,7 +13,7 @@ const ProductItem = ({ product }) => {
 				>
 					<div className={cl.header}>
 						<div className={cl.badges}>
-							{product.rate > 4 && (
+							{product.rating.rate > 4 && (
 								<Badge variant={'primary'} size={'small'} text={'Top'} />
 							)}
 							{product.new && (
@@ -21,11 +21,11 @@ const ProductItem = ({ product }) => {
 							)}
 						</div>
                         <div className={cl.category}>
-							<h4>{product.category?.name}</h4>
+							<h4>{product.category}</h4>
 						</div>
                         <Image
                             alt="Mountains"
-                            src={product.images[0]}
+                            src={product.image}
                             fill
                             sizes="100%"
                             style={{

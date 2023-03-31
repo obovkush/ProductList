@@ -25,7 +25,6 @@ function ProductList({ products, pageSize = 12 }) {
 						return {
 							...product,
 							new: isNew,
-							rate: Math.floor(Math.random() * 5) + 1,
 						};
 					})
 					.slice(firstIndex, lastIndex, lastIndex)
